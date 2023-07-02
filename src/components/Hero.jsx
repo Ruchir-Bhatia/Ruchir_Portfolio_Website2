@@ -56,11 +56,12 @@ const Hero = () => {
 
       <div className='mt-20'>
         <ServiceCard key={picture[0].title} index={0} {...picture[0]} />
-      </div>
-
-      {picture.map((service, index) => (
+        {picture.map((service, index) => (
         <ServiceCard key={service.title} index={index + 1} {...service} />
       ))}
+      </div>
+
+      
       {/* <ComputersCanvas /> */}
 
       {isMobile && (
