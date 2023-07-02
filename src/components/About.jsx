@@ -24,16 +24,13 @@ const ServiceCard = ({ index, title, icon }) => (
         <img
           src={icon}
           alt='web-development'
-          className='w-16 h-16 object-contain'
+          className='w-full h-full object-contain'
         />
-
-        <h3 className='text-white text-[20px] font-bold text-center'>
-          {title}
-        </h3>
       </div>
     </motion.div>
   </Tilt>
 );
+
 
 const About = () => {
   return (
