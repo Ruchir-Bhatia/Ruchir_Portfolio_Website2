@@ -58,7 +58,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <ServiceCard key={services[0].title} index={1} {...services[0]} />
+      <ComputersCanvas />
 
       {isMobile && (
         <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
@@ -80,7 +80,7 @@ const Hero = () => {
         </div>
       )}
 
-      
+      <ServiceCard key={services[0].title} index={1} {...services[0]} />
     </section>
   );
 };
