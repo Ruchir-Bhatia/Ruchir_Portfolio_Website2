@@ -13,8 +13,8 @@ const ServiceCard = ({ index, title, icon }) => (
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       style={{
         position: "absolute",
-        top: '100px',
-        left: '200px',
+        top: '300px',
+        left: '500px',
       }}
       className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
     >
