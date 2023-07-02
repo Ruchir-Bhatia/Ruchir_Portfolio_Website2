@@ -1,35 +1,7 @@
 import { motion } from "framer-motion";
-import React from "react";
-import Tilt from "react-tilt";
-import { picture } from "../constants";
-import { SectionWrapper } from "../hoc";
-import { fadeIn, textVariant } from "../utils/motion";
+
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
-
-const ServiceCard = ({ index, title, icon }) => (
-  <Tilt className='xs:w-[250px] w-full'>
-    <motion.div
-      variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
-    >
-      <div
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
-      >
-        <img
-          src={icon}
-          alt='web-development'
-          className='w-full h-full object-contain'
-        />
-      </div>
-    </motion.div>
-  </Tilt>
-);
 
 const Hero = () => {
   const isMobile = window.matchMedia("(max-width: 500px)").matches;
@@ -54,12 +26,6 @@ const Hero = () => {
         </div>
       </div>
 
-      
-      {picture.map((service, index) => (
-        <ServiceCard key={service.title} index={index + 1} {...service} />
-      ))}
-
-      
       {/* <ComputersCanvas /> */}
 
       {isMobile && (
