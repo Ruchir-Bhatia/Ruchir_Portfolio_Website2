@@ -15,6 +15,7 @@ const ServiceCard = ({ index, title, icon }) => (
         position: "relative",
         top: '200px',
         left: '50%',
+        right: '50%',
       }}
       className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
     >
