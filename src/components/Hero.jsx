@@ -6,6 +6,7 @@ import { styles } from "../styles";
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
+import { center } from "maath/dist/declarations/src/buffer";
 
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt className='xs:w-[250px] w-full'>
@@ -14,8 +15,7 @@ const ServiceCard = ({ index, title, icon }) => (
       style={{
         position: "relative",
         top: '200px',
-        left: '50%',
-        right: '50%',
+        align: center,
       }}
       className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
     >
