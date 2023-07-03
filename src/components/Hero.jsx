@@ -30,7 +30,7 @@ const Hero = () => {
         <img
           src={profileImage}
           alt="Profile"
-          className="rounded-full w-50 h-40 border-4 border-gray-500 mt-90"
+          className="rounded-full w-50 h-40 border-4 border-gray-500 mt-100"
         />
       </div>
 
