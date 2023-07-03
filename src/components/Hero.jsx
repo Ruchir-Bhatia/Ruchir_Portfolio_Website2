@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import profileImage from "./assets/profile.jpeg";
+import profileImage from "../assets/profile.jpeg";
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 
