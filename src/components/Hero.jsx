@@ -16,27 +16,22 @@ const Hero = () => {
           <div className='w-1 sm:h-80 h-40 violet-gradient' />
         </div>
 
-        <div className="flex items-center">
-          <img
-            src={profileImage}
-            alt="Profile"
-            className="rounded-full w-20 h-20 mr-4 border-2 border-gray-500"
-          />
-          <div>
-            <h1 className={`${styles.heroHeadText} text-white`}>
-              Hi, I'm <span className="text-[#915EFF]">Ruchir Bhatia</span>
-            </h1>
-            <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-              I am a Web Developer and a Learner.
-            </p>
-          </div>
-          <img
-            src={profileImage}
-            alt="Profile"
-            className="rounded-full w-20 h-20 mr-4 border-2 border-gray-500"
-          />
+        <div>
+          <h1 className={`${styles.heroHeadText} text-white`}>
+            Hi, I'm <span className="text-[#915EFF]">Ruchir Bhatia</span>
+          </h1>
+          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+            I am a Web Developer and a Learner.
+          </p>
         </div>
+      </div>
 
+      <div className="flex justify-center items-center">
+        <img
+          src={profileImage}
+          alt="Profile"
+          className="rounded-full w-40 h-40 border-2 border-gray-500 mt-4"
+        />
       </div>
 
       {/* <ComputersCanvas /> */}
