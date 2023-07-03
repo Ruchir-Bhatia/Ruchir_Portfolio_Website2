@@ -30,6 +30,11 @@ const Hero = () => {
               I am a Web Developer and a Learner.
             </p>
           </div>
+          <img
+            src={profileImage}
+            alt="Profile"
+            className="rounded-full w-20 h-20 mr-4 border-2 border-gray-500"
+          />
         </div>
 
       </div>
